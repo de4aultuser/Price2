@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс-лист</title>
+    <style>
+        /* Стили для центрирования заголовка и таблицы */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: SandyBrown;
+        }
+
+        .full-width {
+            background-color: LightGray;
+            font-weight: bold;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Заголовок -->
+    <h1>Прайс-лист</h1>
+
+    <!-- Таблица -->
+    <table>
+        <!-- Заголовок столбцов -->
+        <tr>
+            <th>Код</th>
+            <th>Наименование</th>
+            <th>Цена</th>
+        </tr>
+        <!-- Объединённая строка -->
+        <tr>
+            <td colspan="3" class="full-width">1. 1С:Предприятие 8</td>
+        </tr>
+
+        <!-- Пример данных -->
+        <tr>
+            <td>001</td>
+            <td>1С:Бухгалтерия 8 для Казахстана</td>
+            <td>100 руб.</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Пример товара 2</td>
+            <td>200 руб.</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Пример товара 3</td>
+            <td>300 руб.</td>
+        </tr>
+    </table>
+</body>
+
+</html>
